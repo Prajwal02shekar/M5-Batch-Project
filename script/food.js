@@ -152,7 +152,7 @@ function displayFoods() {
         <div class="food-cards">
                 <img src="${food.img}" alt="">
                 <h3>${food.name} --- ₹${food.price}</h3>
-                <button>Add to cart</button>
+                <button onclick="addToCart(${food.id})">Add to cart</button>
             </div>
     `)
 }
@@ -170,4 +170,17 @@ function applyFilter(){
         return matchingCategory && matchingFood
     })
     displayFoods()
+}
+
+
+function addToCart(id){
+    let cart=JSON.parse(localStorage.getItem('cart'))||[];
+
+    let item=foods.find((f)=>f.id===id)
+
+    console.log(item)
+    cart.push(item)
+    console.log(cart)
+    localStorage.setItem('cart',JSON.stringify(cart))
+    alert(`${item.name} added to cart`)
 }

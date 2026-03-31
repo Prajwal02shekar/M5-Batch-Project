@@ -15,7 +15,7 @@
         <aside class="nav-items">
             <a href="">Home</a>
             <a href="./Food.html">Food</a>
-            <a href="">Cart</a>
+            <a href="./cartPage.html">Cart</a>
         </aside>
         <aside class="personImage">
             <img src="" alt="" id="userImage">
@@ -23,31 +23,27 @@
     </nav>
 
     <!-- search box -->
-        <section class="searchFilter">
-            <select id="category" onchange="applyFilter()">
-                <option value="All">All</option>
-                <option value="Pizza">Pizza</option>
-                <option value="Burger">Burger</option>
-                <option value="Rolls">Rolls</option>
-                <option value="Desserts">Desserts</option>
-                <option value="Snacks">Snacks</option>
-                <option value="Drinks">Drinks</option>
-                <option value="Biryani">Biryani</option>
+    <section class="searchFilter">
+        <select id="category" onchange="applyFilter()">
+            <option value="All">All</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Rolls">Rolls</option>
+            <option value="Desserts">Desserts</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Biryani">Biryani</option>
 
-            </select>
+        </select>
 
-            <input type="search" id="searchBox" placeholder="search food ....."  
-            
-            
-            
-            >
-        </section>
+        <input type="search" id="searchBox" placeholder="search food ....." onkeyup="applyFilter()">
+    </section>
 
-        <!-- Food Container -->
+    <!-- Food Container -->
 
-        <section id="food-items">
-            
-        </section>
+    <section id="food-items">
+
+    </section>
 
     <!-- Footer code -->
     <footer>

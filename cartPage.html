@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- nav bar code -->
+    <nav>
+        <h2>PandaFoodCart🍽️</h2>
+        <aside class="nav-items">
+            <a href="">Home</a>
+            <a href="./Food.html">Food</a>
+            <a href="./cartPage.html">Cart</a>
+        </aside>
+        <aside class="personImage">
+            <img src="" alt="" id="userImage">
+        </aside>
+    </nav>
+    <section class="cartContainer">
+        <h2>Your Cart Items</h2>
+    </section>
+    <section id="cart-items"></section>
+
+
+    <section class="cart-summary">
+        <h2 id="total-price"></h2>
+        <div class="btns">
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </section>
+</body>
+<script src="./script/cart.js"></script>
+
+</html>

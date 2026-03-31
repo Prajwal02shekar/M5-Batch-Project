@@ -139,14 +139,23 @@ footer{
 }
 
 /* Food Container */
-#food-items{
-    height: 200vh;
+#food-items {
+    height: 150vh;
     width: 100%;
     background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+#cart-items{
+    height: 75vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
 }
 .food-cards{
     height: 250px;
@@ -163,4 +172,35 @@ footer{
     height: 150px;
     width: 150px;
     border-radius: 10px;
+}
+/* cart Summary */
+.cart-summary{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.btns button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.btns button:first-child{
+    background-color: red;
+    color: aliceblue;
+}
+.btns button:last-child{
+    background-color: green;
+    color: aliceblue;
+}
+#remove-btn{
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: aliceblue;
 }
